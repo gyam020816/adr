@@ -3,7 +3,7 @@
 - [github/hub](https://github.com/github/hub)
 - dotfiles
 - tig
-- sdkman
+- [sdkman](https://sdkman.io/)
 
 ## architectural
 

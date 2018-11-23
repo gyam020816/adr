@@ -8,3 +8,6 @@
 ## architectural
 
 - Documenting architecture decisions, or [ADR (architecture decision records)](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
+
+## note taking
+- [Boostnote](https://boostnote.io/) *to facilitate note-taking as a developer*

@@ -1,6 +1,8 @@
 # devoops
 dev'oops 🤷
 
+The following are written notes to myself on how I configured a GitHub Organization, written in pseudocode.
+
 ## In GitHub
 ```kotlin
 val myPersonalGithubAccount = "gyam"

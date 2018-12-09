@@ -10,7 +10,7 @@ val sharedSecret = goTo(avatar.menu, Settings.menuitem, `Developer settings`.sid
         `Personal access tokens`.sidebar, `Generate new token`.button) andConfigure {
         `repo:status`.choice     = true
         `admin:repo_hook`.choice = true
-} andCopyToken()
+}.andCopyToken()
 
 val organization = GitHub.Organization("gyam020816")
 val jenkinsUrl   = "https://blueocean.ci.duskforest.xyz"

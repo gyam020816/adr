@@ -7,7 +7,8 @@ The following are written notes to myself on how I configured a Jenkins GitHub O
 ```kotlin
 val myPersonalGithubAccount = "gyam"
 val sharedSecret = goTo(
-        avatar.menu, Settings.menuitem, `Developer settings`.sidebar, `Personal access tokens`.sidebar, `Generate new token`.button
+        avatar.menu, Settings.menuitem, `Developer settings`.sidebar,
+        `Personal access tokens`.sidebar, `Generate new token`.button
     ) andConfigure {
         `repo:status`.choice     = true
         `admin:repo_hook`.choice = true

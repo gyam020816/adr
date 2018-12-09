@@ -1,7 +1,7 @@
 # devoops
 dev'oops 🤷
 
-The following are written notes to myself on how I configured a GitHub Organization, written in pseudocode.
+The following are written notes to myself on how I configured a Jenkins GitHub Organization scan, written in pseudocode.
 
 ## In GitHub
 ```kotlin

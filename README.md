@@ -18,7 +18,7 @@ val jenkinsUrl   = "https://blueocean.ci.duskforest.xyz"
 goTo(organization.page, Settings.tab, Webhooks.sidebar, `Add webhook`.button) andConfigure {
     `Payload URL`.text        = "$jenkinsUrl/github-webhook/"
     `Content type`.choice     = "application/json"
-    `Secret`.password         = sharedSecret
+    `Secret`.password         = sharedSecret // Why does Github send its own secret to some third party?!
     `SSL verification`.choice = "Enable SSL verification"
     `Which events would you like to trigger this webhook?`.multichoice andConfigure {
          `Pull requests`.checkbox = true

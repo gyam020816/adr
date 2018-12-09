@@ -43,9 +43,9 @@ goTo(`New Item`.sidebar) andConfigure {
             `API endpoint`.choice = "GitHub"
             `Credentials`.choice  = Add.button andSelect "Jenkins" andConfigure {
                 Kind.choice           = "Username with password"
-                Username              = previousGitHubStep.myPersonalGithubAccount
-                Password              = previousGitHubStep.sharedSecret
-                ID                    = "org-${previousGitHubStep.organization}"
+                Username.text         = previousGitHubStep.myPersonalGithubAccount
+                Password.text         = previousGitHubStep.sharedSecret
+                ID.text               = "org-${previousGitHubStep.organization}"
             }.andSelect()
             Owner.text            = previousGitHubStep.organization
             Behaviours.bundle     = listOf(

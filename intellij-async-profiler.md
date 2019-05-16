@@ -14,10 +14,19 @@ This is a quick writedown of steps necessary to setup IntelliJ with Async Profil
 
 Follow one of the following:
 - If you want to profile a simple class execution, follow [IntelliJ guide](https://www.jetbrains.com/help/idea/cpu-profiler.html#UsingTheProfiler).
-- If your execution is a bit more complex i.e. the project is started through `./run.sh` script or a long `mvn` goal, then:
-  - Follow [async-profiler basic guide](https://github.com/jvm-profiling-tools/async-profiler#basic-usage).
-  - Generate a report with the `collapsed` output format, see example below.
-  - In IntelliJ, import the report from *Run | Import Profiler Results | From File...*.
+- If your execution is a bit more complex i.e. the project is started through `./run.sh` script or a long `mvn` goal, then there are multiple ways:
+
+### Use IntelliJ to attach to a running process
+
+- Run your application by whatever means.
+- Use `Run | Attach Profiler to Process...`.
+  - If IntelliJ displays an error popup on Linux regarding to the the Linux kernel, click the *configure* link in the popup to fix it.
+
+### Use async-profiler manually
+
+- Follow [async-profiler basic guide](https://github.com/jvm-profiling-tools/async-profiler#basic-usage).
+- Generate a report with the `collapsed` output format, see example below.
+- In IntelliJ, import the report from *Run | Import Profiler Results | From File...*.
 
 ```
 # Assuming 21961 is the java process ID
